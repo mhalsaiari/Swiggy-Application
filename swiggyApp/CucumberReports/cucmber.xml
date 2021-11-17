@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.177">
+    <testcase classname="Check Website Title" name="Open website and check title" time="13.068">
+        <system-out><![CDATA[Given I am on main page.....................................................passed
+When I get the title of the page............................................passed
+Then I validate title as 'Order food online from India\'s best food delivery service. Order from restaurants near you'.passed
+]]></system-out>
+    </testcase>
+</testsuite>

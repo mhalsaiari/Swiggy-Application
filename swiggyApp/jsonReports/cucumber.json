@@ -1,0 +1,66 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-17T18:00:27.174Z",
+        "line": 4,
+        "name": "Open website and check title",
+        "description": "",
+        "id": "check-website-title;open-website-and-check-title",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12984603100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on main page",
+            "match": {
+              "location": "steps.mainpageSteps.i_am_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8584100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the title of the page",
+            "match": {
+              "location": "steps.mainpageSteps.i_get_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3998500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate title as \u0027Order food online from India\\\u0027s best food delivery service. Order from restaurants near you\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Order food online from India\\\u0027s best food delivery service. Order from restaurants near you\u0027",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.mainpageSteps.i_validate_the_title_as_login_my_store(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check Website Title",
+    "description": "",
+    "id": "check-website-title",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featuers/CheckTitle.feature",
+    "tags": []
+  }
+]
