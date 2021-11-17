@@ -24,11 +24,10 @@ public class mainpageSteps extends TestBase{
 	@When("I get the title of the page")
 	public void i_get_the_title_of_the_page() {
 		title = ma.validateTitle();
-		System.out.println("the title of page is :" + title);
 	    
 	}
 	@Then("I validate title as {string}")
-	public void i_validate_the_title_as_login_my_store(String expectedTitle) {
+	public void i_validate_the_title_(String expectedTitle) {
 	   
 		Assert.assertEquals(title, expectedTitle);
 			

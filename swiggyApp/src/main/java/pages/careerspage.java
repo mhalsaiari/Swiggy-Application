@@ -10,36 +10,32 @@ import base.TestBase;
 
 public class careerspage extends TestBase{
 	
-	@FindBy(id="id_contact")
-	WebElement Subjectheading;
-	@FindBy(id="email")
-	WebElement email;
-	@FindBy(id="id_order")
-	WebElement orderref;
-	@FindBy(id="message")
-	WebElement messageText;
-	@FindBy(id="submitMessage")
-	WebElement sendButton;
+	@FindBy(xpath="/html/body/app-root/app-home/div/div[1]/div[2]/div/div/div/div/div/div/div[1]/div/input")
+	WebElement CareesTextFiled;
+	
+	@FindBy(xpath="/html/body/app-root/app-home/div/div[1]/div[2]/div/div/div/div/div/div/div[4]/div/button")
+	WebElement SearchButton;
 	
 	public careerspage()
 	{
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	public String getContactUsPageTitle() {
-		return driver.getTitle();
-	}
-	public void fillContactUsForm(String emailId, String orderReference, String message) {
-		Select select = new Select(Subjectheading);
-		select.selectByVisibleText("Customer service");
-		email.sendKeys(emailId);
-		orderref.sendKeys(orderReference);
-		messageText.sendKeys(message);
+	public void EnterJobName(String jobName) {
+		CareesTextFiled.sendKeys(jobName);
 	}
 	
-	public void clickSend() {
-		sendButton.click();
+	public void clickSearchButton(){
+		SearchButton.click();
 	}
 
+	public String validateTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	public void search() {
+		SearchButton.click();
+	}
+	
 }

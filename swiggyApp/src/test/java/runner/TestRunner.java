@@ -18,9 +18,10 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:CucumberReports/cucmber.xml"
 				
 		}
-		// tags = "@Contact"
+		//tags = "@career"
 		
 		)
+		
 
 
 public class TestRunner {
